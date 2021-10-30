@@ -60,16 +60,6 @@ std::map<std::string, std::string> CONVERSIONTABLE {
     {"z" , "ѕ"}
 };
 
-// from stackoverflow: https://stackoverflow.com/questions/3418231/replace-part-of-a-string-with-another-string
-bool replace(std::string& str, const std::string& from, const std::string& to) {
-    size_t start_pos = str.find(from);
-    if (start_pos == std::string::npos)
-        return false;
-    str.replace(start_pos, from.length(), to);
-    return true;
-}
-// end stackoverflow 
-
 int main() {
     std::string input;
     std::cin >> input;
